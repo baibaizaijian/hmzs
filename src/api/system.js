@@ -65,6 +65,17 @@ export function createEmployeeAPI(data) {
     data
   })
 }
+/**
+ * 修过员工
+ * @returns
+ */
+export function putEmployee(data) {
+  return request({
+    url: `/park/sys/user`,
+    method: 'put',
+    data
+  })
+}
 
 /**
  * 删除员工
@@ -74,6 +85,18 @@ export function delEmployeeAPI(id) {
   return request({
     url: `/park/sys/user/${id}`,
     method: 'DELETE'
+  })
+}
+/**
+ * 重置密码
+ * @returns
+ */
+
+export function resetPwd(data) {
+  return request({
+    url: `/park/sys/user/resetPwd`,
+    method: 'put',
+    data
   })
 }
 
