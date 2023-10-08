@@ -1,0 +1,103 @@
+// 这里导入其它scss模块
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-variables.scss';
+@import './reset-element.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+
+}
+
+#app {
+  height: 100%;
+ 
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.el-table{
+.has-gutter{
+  th{
+    background-color: #f4f6f8;
+  }
+}
+    .cell{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    }
+}
+.el-pagination{
+  float: right;
+  .el-pager li.active {
+    color: #4770FF;
+    border: 1px solid #4770FF;
+    border-radius: 3px;
+  }
+}
+.el-dialog{
+  border-radius:10px;
+  .el-form-item__label{
+    font-weight: 500;
+  }
+  .el-dialog__footer{
+    background-color: #f4f6f8;
+    border-radius:0px 0px 10px 10px;
+    padding: 0;
+    .dialog-footer{
+      padding: 20px;
+    }
+  }
+
+}
