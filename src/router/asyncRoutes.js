@@ -52,6 +52,15 @@ export const asyncRoutes = [
     }]
   },
   {
+    path: '/Propety',
+    component: Layout,
+    children: [{
+      path: '',
+      component: () => import('@/views/Propety/index'),
+      meta: { title: '物业费管理', icon: 'el-icon-data-board' }
+    }]
+  },
+  {
     path: '/pole',
     component: Layout,
     permission: 'pole',
